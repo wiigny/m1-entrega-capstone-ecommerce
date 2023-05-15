@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Weartake</title>
+        <meta name="description" content="Weartake">
+        <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script src="./js/database.js"></script>
+        <script defer src="./js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div>
+                    <h1>Weartake</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="todos">Todos</li>
+                        <li id="acessorios">Acessórios</li>
+                        <li id="calcados">Calçados</li>
+                        <li id="camisetas">Camisetas</li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+        <main class="container">
+            <section class="lista__produtos" id="listaProdutos">
+                <ul>
+                </ul>
+            </section>
+
+            <section class="pesquisa__carrinho">
+                <form class="procurar">
+                    <input type="text" id="inputText" placeholder="Digite aqui sua pesquisa">
+                    <input type="submit" id="pequisarProdutos" value="Pesquisar">
+                </form>
+                <h3>Carrinho de Compras</h3>
+                <div>
+                    <ul id="listCarrinho">
+                    </ul>
+                </div>
+                <div class="carrinho__vazio" id="contadorCarrinho">
+                    <span>Carrinho Vázio</span>
+                    <p>Adicione itens</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
